@@ -1,37 +1,148 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="X-Frame-Options" content="DENY">
+        <meta http-equiv="pragma" content="no-cache"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta charset="utf-8"/>
 
-You can use the [editor on GitHub](https://github.com/Dom914/Retro-Bowl/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+        <title>Retro Bowl | 3kh0</title>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+        <style>
+            .alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
 
-### Markdown
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+.closebtn:hover {
+  color: black;
+}
+            body {
+              background: #0;
+              color:#cccccc;
+              margin: 0px;
+              padding: 0px;
+              border: 0px;
+            }
+            canvas {
+                      image-rendering: optimizeSpeed;
+                      -webkit-interpolation-mode: nearest-neighbor;
+                      -ms-touch-action: none;
+                      margin: 0px;
+                      padding: 0px;
+                      border: 0px;
+            }
+            :-webkit-full-screen #canvas {
+                 width: 100%;
+                 height: 100%;
+            }
+            div.gm4html5_div_class
+            {
+              margin: 0px;
+              padding: 0px;
+              border: 0px;
+            }
+            /* START - Login Dialog Box */
+            div.gm4html5_login
+            {
+                 padding: 20px;
+                 position: absolute;
+                 border: solid 2px #000000;
+                 background-color: #404040;
+                 color:#00ff00;
+                 border-radius: 15px;
+                 box-shadow: #101010 20px 20px 40px;
+            }
+            div.gm4html5_cancel_button
+            {
+                 float: right;
+            }
+            div.gm4html5_login_button
+            {
+                 float: left;
+            }
+            div.gm4html5_login_header
+            {
+                 text-align: center;
+            }
+            /* END - Login Dialog Box */
+            :-webkit-full-screen {
+               width: 100%;
+               height: 100%;
+            }
+        </style>
+    </head>
 
-```markdown
-Syntax highlighted code block
+    <body>
+        <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>Moving!</strong> This page will be deleted soon. Please go <a href="https://3kh0.github.io/projects/retro-bowl/">here</a> for the new version!
+</div>
+        <div class="gm4html5_div_class" id="gm4html5_div_id">
+        <img src="html5game/splash.png" id="GM4HTML5_loadingscreen" alt="GameMaker:HTML5 loading screen" style="display:none;"/>
+            <canvas id="canvas" width="853" height="480">
+                     <p>Your browser doesn't support HTML5 canvas.</p>
+            </canvas>
+        </div>
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+        <script type="text/javascript" src="html5game/RetroBowl.js"></script>
+        <script type="application/javascript" src="/js/lib.js"></script>
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+<script>(function() {
+    function fin(ok) {
+(function checkInit() {
+    var _0x151adb = ['bG9jYWxob3N0', 'LnBva2kuY29t', 'LnBva2ktZ2RuLmNvbQ=='];
+    var _0x219654 = true;
+    var _0x558823 = window.location.hostname;
+    for (var _0x220888 = 0x0; _0x220888 < _0x151adb.length; _0x220888++) {
+        var _0x4a2f49 = atob(_0x151adb[_0x220888]);
+        if (_0x558823.indexOf(_0x4a2f49, _0x558823.length - _0x4a2f49.length) !== -0x1) {
+            _0x219654 = true;
+            break;
+        }
+    }
+    if (!_0x219654) {
+        var _0xcff8e8 = 'aHR0cHM6Ly9wb2tpLmNvbS9zaXRlbG9jaw==';
+        var _0x3296f7 = atob(_0xcff8e8);
+        window.location.href = _0x3296f7;
+        this.top.location !== this.location && (this.top.location = this.location);
+    }
+}());
+        window.PokiSDK_OK = ok;
+        GameMaker_Init();
+    }
+    window.addEventListener("load", function(_) {
+        window.PokiSDK_loadState = 0;
+        if (window.PokiSDK) {
+            PokiSDK.init().then(function() {
+            fin(true);
+        }).catch(function() {
+            fin(false);
+        });
+        } else {
+            window.PokiSDK = null;
+            fin(false);
+        }
+    });
+    })();
+</script>
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Dom914/Retro-Bowl/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+    </body>
+</html>
